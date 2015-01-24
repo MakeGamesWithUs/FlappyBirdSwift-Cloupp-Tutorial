@@ -14,10 +14,9 @@ Then run the game. You should see a random obstacle appear!
 More Obstacles
 ==============
 
-Now that we have one obstacle, lets add more! To do that, lets add a new variable to keep track of time passed. At the top,
-below where it says ```// put variables below this line```, add the following:
+Now that we have one obstacle, lets add more! We've set up the variable```timeSinceObstacle``` of type ```CCTime``` for you. In the ```initialize``` function, set it to ```0```:
 
-	var timeSinceObstacle:CCTime = 0
+	timeSinceObstacle = 0
 
 
 What we want to do is add a new obstacle at some regular interval.

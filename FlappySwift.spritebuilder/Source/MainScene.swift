@@ -14,7 +14,7 @@ class MainScene: GameplayScene {
     var _ground1: CCNode!
     var _ground2: CCNode!
     var _grounds: [CCNode] = []
-    
+  
     var _sinceTouch: NSTimeInterval = 0
     var _obstacles: [Obstacle] = []
     var powerups: [CCNode] = []
@@ -31,7 +31,9 @@ class MainScene: GameplayScene {
   
     var g1Pos: CGPoint!
     var g2Pos: CGPoint!
-    
+  
+    var timeSinceObstacle: CCTime = 0
+  
     override init() {}
   
     // is called when CCB file has completed loading
@@ -88,7 +90,9 @@ class MainScene: GameplayScene {
             _sinceTouch = 0.0
             
             self.tap()
-        }
+        } else {
+          self.restart()
+      }
     }
     
     #if os(iOS)
