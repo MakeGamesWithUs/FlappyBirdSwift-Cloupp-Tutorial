@@ -32,8 +32,6 @@ class MainScene: GameplayScene {
     var g1Pos: CGPoint!
     var g2Pos: CGPoint!
   
-    var timeSinceObstacle: CCTime = 0
-  
     override init() {}
   
     // is called when CCB file has completed loading

@@ -40,4 +40,6 @@ class TutorialScene: CCNode, CCPhysicsCollisionDelegate {
     func passedObstacle() {}
     
     override func update(delta: CCTime) {}
+    
+    var timeSinceObstacle: CCTime = 0
 }
